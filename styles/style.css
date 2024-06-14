@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 70px;
+  background: #AD0505;
+  font-size: 21px;
+}
+
+ul {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style: none;
+}
+
+.main-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 4px solid #AD0505;
+}
+
+.main-title {
+  font-size: 64px;
+  text-align: center;
+  font-family: 'Pacifico';
+  margin: 90px;
+  animation-name: upToDown;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes upToDown {
+  0% {
+    opacity: 0;
+    margin-top: -300px;
+  } 
+  75% {
+    margin-top: 120px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-img {
+  width: 1000px;
+}
+
+.expositions-title {
+  text-transform: uppercase;
+}
+
+.main-name {
+  font-size: 40px;
+  color: #AD0505;
+  text-align: center;
+  margin-top: 48px;
+  font-weight: 600;
+  margin-bottom: 85px;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 80px;
+}
+
+.event {
+  background: #AD0505;
+  width: 610px;
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.event-img {
+  width: 530px;
+  height: 346px;
+}
+
+.event-name {
+  font-size: 24px;
+  width: 534px;
+}
+
+.event-price {
+  font-size: 20px;
+}
+
+.expositions {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.arrow1, .arrow2 {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.arrow2 {
+  right: 0;
+}
+
+.exposition-image {
+  display: flex;
+  justify-content: center;
+}
+
+.exposition-image img {
+  width: 1024px;
+  height: 683px;
+  cursor: pointer;
+  transition: .5s all;
+}
+
+.exposition-image img:hover {
+  transform: scale(1.02);
+}
+
+.exposition-image a:nth-child(2), .exposition-image a:nth-child(3) {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  height: 4px;
+  width: 1000px;
+  background: #AD0505;
+  margin-bottom: 65px;
+}
+
+.quote {
+  width: 900px;
+  font-size: 24px;
+  margin-bottom: 100px;
+}
+
+.quote-img {
+  display: flex;
+  gap: 130px;
+  border-bottom: 4px solid #AD0505;
+  padding-bottom: 85px;
+}
+
+.estimation-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.estimation-inputs {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 450px;
+  height: 70px;
+  border: 1px solid #B3B3B3;
+  border-radius: 10px;
+  margin-right: 50px;
+  padding-left: 20px;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.textarea {
+  text-align: center;
+}
+
+textarea {
+  padding: 20px;
+}
+
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+.estimation-btn {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 40px;
+  background: #878787;
+  font-size: 24px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+}

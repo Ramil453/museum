@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 70px;
+  background: #AD0505;
+  font-size: 21px;
+}
+
+ul {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style: none;
+}
+
+.main-img {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-text {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 80px;
+  text-indent: 40px;
+  font-size: 18px;
+}
+
+.margin {
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.main-video {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
